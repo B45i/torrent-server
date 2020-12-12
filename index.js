@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.options('*', cors());;
 
-const port =  process.env.PORT || 5000
+const port = process.env.PORT || 5000
 TorrentSearchApi.enablePublicProviders();
 
 app.get('/', (req, res) => {
@@ -22,7 +22,7 @@ app.get('/search/:text', async (req, res) => {
         });
     } catch (err) {
         console.error(err.message);
-        res.status(500).send('Something went wrong');
+        res.status(500).send('പൂണ്ട  മൈര്, സെർവർ  ഊമ്പി ');
     }
 });
 

@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.options('*', cors());;
 
-const port = process.env.port || 3000;
+const port =  process.env.PORT || 5000
 TorrentSearchApi.enablePublicProviders();
 
 app.get('/', (req, res) => {

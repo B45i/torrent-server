@@ -20,7 +20,7 @@ app.get('/search/:text', async (req, res) => {
 
     if (cache[req.params.text.toLowerCase()]) {
         console.log('Sending cached data...');
-        return res.json(cache[req.params.text]);
+        return res.json(cache[req.params.text.toLowerCase()]);
     }
 
     try {
